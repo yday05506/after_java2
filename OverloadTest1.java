@@ -16,6 +16,6 @@ public class OverloadTest1 {
 	}
 	
 	public void calc(int n1, int n2, int n3) {
-		result1 = n1 + n2 + n3;
+		result2 = n1 + n2 + n3;
 	}
 }
