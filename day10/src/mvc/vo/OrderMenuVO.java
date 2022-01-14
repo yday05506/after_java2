@@ -2,26 +2,22 @@ package mvc.vo;
 
 public class OrderMenuVO {
 	private int orderNo;
-	private String memuNo;
+	private int menuNo;
 	private int menuPrice;
 	private int menuCount;
 	
-	public OrderMenuVO(int orderNo, String memuNo, int menuPrice, int menuCount) {
+	public OrderMenuVO(int orderNo, int menuNo, int menuPrice, int menuCount) {
 		this.orderNo = orderNo;
-		this.memuNo = memuNo;
+		this.menuNo = menuNo;
 		this.menuPrice = menuPrice;
 		this.menuCount = menuCount;
 	}
-	
-	public OrderMenuVO(int orderNo2, int menuNo, int menuPrice2, int menuCount2) {
-		// TODO Auto-generated constructor stub
-	}
 
-	public String getMemuNo() {
-		return memuNo;
+	public int getMenuNo() {
+		return menuNo;
 	}
-	public void setMemuName(String memuNo) {
-		this.memuNo = memuNo;
+	public void setMenuName(int menuNo) {
+		this.menuNo = menuNo;
 	}
 	public int getMenuPrice() {
 		return menuPrice;

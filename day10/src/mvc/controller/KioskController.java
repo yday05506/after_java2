@@ -6,7 +6,7 @@ import java.util.Scanner;
 import mvc.view.KioskView;
 import mvc.vo.OrderMenuVO;
 
-public class KioskController {
+public class KioskController { 
 	private static int[] price = {3000, 5000, 3500, 5000, 4000};
 	
 	public static void selectMenuPrint() {
@@ -35,8 +35,6 @@ public class KioskController {
 			OrderMenuVO om = new OrderMenuVO (orderNo, menuNo, price[menuNo-1], menuCount);
 			
 			orderMenuArrList.add(om);
-					
-			orderNo++;
 			
 			System.out.print("메뉴를 계속 선택하시겠습니까?(y/n)");
 			String msg = s1.nextLine();
@@ -53,6 +51,7 @@ public class KioskController {
 		System.out.println("**********************************");
 		System.out.println(orderNo + "번 고객님의 결제 및 주문이 완료되었습니다.");
 		System.out.println("**********************************");
+		
 		s1.close();
 		s2.close();
 	}

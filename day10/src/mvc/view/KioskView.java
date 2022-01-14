@@ -43,7 +43,7 @@ public class KioskView {
 			//OrderMenuVO 객체의 정보를 반환 받아서 주문 내역을 출력(반복)
 			int price = om.getMenuPrice();
 			int count = om.getMenuCount();
-			System.out.printf("%d. %s : %d원 주문 개수(%d) 합계 : %d\n", i+1, getMenuName(om.getOrderNo()), price, count, price * count);
+			System.out.printf("%d. %s : %d원 주문 개수(%d) 합계 : %d\n", i+1, getMenuName(om.getMenuNo()), price, count, price * count);
 			sum += price * count;
 		}
 		
